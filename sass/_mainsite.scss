@@ -1,0 +1,418 @@
+$colors: (
+    DPurple : #9453A6,
+    DGreen : #8CBF3F,
+    DYellow : #F2CC0F,
+    DWhite : #F2F2F2,
+    DBlack : #0d0d0d,
+);
+
+$fonts: (
+   fheader1 : "pattaya",
+   fheader2 : "Henny Penny",
+   ftext : "Roboto",
+);
+
+/* Carousel Slayder*/
+#carouselFull {
+    margin-top: 115px;
+    margin-left: 40px;
+}
+
+.carousel-indicators {
+    z-index: 1;
+}
+
+#carouselFull a {
+    width: 5%;
+}
+
+
+.carousel-inner {
+    width: 100%;
+
+}
+
+.carousel-control-next{
+    right: 25px;
+}
+
+.carousel-caption {
+    padding-bottom: 12%;
+    z-index: 0;
+}
+
+.carousel-caption .h3c {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: map-get($fonts, fheader2 );
+    color: map-get($colors, DBlack );
+    margin: 0;
+
+    
+}
+
+
+.carousel-caption .p3c {
+    font-size: 2em;
+    margin-right: 50px;
+    font-family: map-get($fonts, fheader1);
+    color: map-get($colors, DBlack );
+}
+
+.carousel-caption .h3w {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: map-get($fonts, fheader2 );
+    color: map-get($colors, DWhite );
+}
+
+.carousel-caption .pw {
+    font-size: 1.5em;
+    color: #21ddfb;
+    margin-right: 50px;
+    font-family: map-get($fonts, ftext);
+    color: map-get($colors, DWhite );
+}
+
+.carousel-caption p {
+    font-size: 1em;
+    color: #21ddfb;
+    margin-right: 50px;
+    font-family: map-get($fonts, ftext);
+    color: map-get($colors, DBlack );
+
+
+}
+
+.btn-park {
+    background-color: map-get($colors, DBlack );
+    color: map-get($colors, DWhite );
+    font-family: map-get($fonts, fheader1);
+    font-size: 1.3em;
+
+}
+
+/* END Carousel Slayder*/
+
+
+.img-sm {
+ margin-top: 70px;
+
+}
+
+/* Banners */
+.banner1 {
+    position: absolute;  
+    top: 900px;
+}
+
+.banner2 {
+position: absolute; 
+top: 900px;
+left: 89%;
+    
+}
+
+.banner3 {
+    position: absolute;  
+    top: 2000px;
+}
+
+.banner4 {
+position: absolute; 
+top: 2000px;
+left: 89%;
+    
+}
+
+/* END Banners */
+
+/* No Color Headers */
+#NCHeader {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wtitle {
+    padding: 50px;    
+}
+
+.wtitle h2 {
+    font-size: 5em;
+    color: map-get($colors, DBlack);
+    font-family:map-get($fonts , fheader1);
+}
+
+/*END No Color Headers */
+
+/* Hotel Cards*/
+
+.our-hotels {
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+
+.our-hotels:hover {
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+.our-hotels .pic {
+    overflow: hidden;
+    position: relative;
+}
+
+.our-hotels .pic:before,
+.our-hotels .pic:after {
+    content: "";
+    width: 200%;
+    height: 80%;
+    background: map-get($colors, DYellow);
+    opacity: 0.3;
+
+    position: absolute;
+    top: -100%;
+    left: -4%;
+    transform: rotate(45deg);
+    transition: all 0.5s ease 0s;
+}
+
+.our-hotels .pic:after {
+    background:map-get($colors, DGreen);
+    opacity: 0.3;
+    top: auto;
+    left: auto;
+    bottom: -100%;
+    right: -4%;
+}
+
+.our-hotels:hover .pic:before {
+    top: 0;
+}
+
+.our-hotels:hover .pic:after {
+    bottom: 0;
+}
+
+.our-hotels .pic img {
+    width: 100%;
+    height: auto;
+
+}
+
+.our-hotels .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s ease 0.3s;
+}
+
+.our-hotels:hover .social {
+    opacity: 1;
+}
+
+.our-hotels .social li {
+    display: inline-block;
+}
+
+.our-hotels .social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 30px;
+    color: map-get($colors, DBlack);
+    margin-right: 10px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.our-hotels .social li a:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: map-get($colors, DPurple);
+    border-radius: 0 20px 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+
+.our-hotels .social li a:hover:after {
+    transform: rotate(180deg);
+}
+
+.our-hotels .hotel-content {
+    padding: 20px;
+}
+
+
+// נמחקו בגלל שינוי אך משאיר בשביל לראות אולי צריך לקחת משהו
+/* .our-hotels .title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #047168;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-family:map-get($fonts , fheader1);
+
+}
+
+.our-hotels .post {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: #707070;
+    text-transform: capitalize;
+}
+
+ */
+// ---------------------------------------------------
+
+/*END  Hotel Cards*/
+
+/*Walk-OnsBistreauxAndBar*/
+
+
+#vid {
+    padding:30px 0px;
+    background-image: url(../images/Sponsers/WalkOnsBistreauxAndBar/WalkOnsBistreauxAndBar16.jpg);
+    width: 100%;
+    margin-bottom: 30px;
+
+    p {
+        font-family: map-get($fonts, ftext);
+        color: map-get($colors, DBlack );
+        font-size: 1.1em;
+        text-align: center;
+        margin-top: 4%;
+        margin-bottom: 2%;
+        background-color: #E9ECEF;
+        padding: 5px 5px;
+        border: 1px solid map-get($colors, DBlack );
+ 
+
+    }
+
+    a {
+        font-family: map-get($fonts, fheader1 );
+        color : map-get($colors, DWhite);
+        background-color:  map-get($colors, DBlack);
+        color:  map-get($colors, DWhite);
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    a:hover {
+        color : map-get($colors, DPurple);
+       
+    }
+   
+}
+
+/* END Walk-OnsBistreauxAndBar*/
+
+
+
+
+
+@media screen and (max-width: 1140px){
+
+    .banner1, .banner2, .banner3 , .banner4 {
+        display: none;
+    }
+
+    
+.carousel-caption .h3w {
+    font-size: 3rem;
+}
+
+.carousel-caption .pw {
+    font-size: 1.2em;
+}
+
+
+.carousel-caption .h3c {
+    font-size: 3em;
+}
+
+
+.carousel-caption .p3c {
+    font-size: 1.5em;
+
+}
+
+
+
+}
+
+
+@media screen and (max-width: 992px){
+    .wtitle h2 {
+      font-size: 4em;
+    }
+
+        
+.carousel-caption .h3w {
+    font-size: 1.8rem;
+}
+
+.carousel-caption .pw {
+    font-size: 1.1em;
+}
+
+
+.carousel-caption .h3c {
+    font-size: 2em;
+}
+    
+
+    
+   };
+  
+  @media screen and (max-width: 768px){
+    .wtitle h2 {
+      font-size: 3em;
+    }
+
+    .cartext {
+        top: 30px;
+    }
+  
+    
+.carousel-caption .p3c {
+    font-size: 1.3em;
+
+}
+
+.walkvid {
+    display: none;
+}
+
+  };
+  
+  @media screen and (max-width: 576px){
+    .wtitle h2 {
+      font-size: 3em;
+  }
+  .carousel{
+    display: none;
+}
+ 
+      };
+

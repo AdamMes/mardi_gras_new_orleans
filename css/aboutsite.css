@@ -1,0 +1,21 @@
+/* No Color Headers */
+#NCHeader {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wtitle {
+  margin-top: 80px;
+  padding: 50px;
+}
+
+.wtitle h2 {
+  font-size: 5em;
+  color: #0d0d0d;
+  font-family: "pattaya";
+}
+
+/*END No Color Headers */
+/*# sourceMappingURL=aboutsite.css.map */

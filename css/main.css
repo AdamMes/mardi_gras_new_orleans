@@ -1,0 +1,736 @@
+/* Carousel Slayder*/
+#carouselFull {
+  margin-top: 115px;
+  margin-left: 40px;
+}
+
+.carousel-indicators {
+  z-index: 1;
+}
+
+#carouselFull a {
+  width: 5%;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-control-next {
+  right: 25px;
+}
+
+.carousel-caption {
+  padding-bottom: 12%;
+  z-index: 0;
+}
+
+.carousel-caption .h3c {
+  font-size: 5em;
+  font-weight: bold;
+  font-family: "Henny Penny";
+  color: #0d0d0d;
+  margin: 0;
+}
+
+.carousel-caption .p3c {
+  font-size: 2em;
+  margin-right: 50px;
+  font-family: "pattaya";
+  color: #0d0d0d;
+}
+
+.carousel-caption .h3w {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Henny Penny";
+  color: #F2F2F2;
+}
+
+.carousel-caption .pw {
+  font-size: 1.5em;
+  color: #21ddfb;
+  margin-right: 50px;
+  font-family: "Roboto";
+  color: #F2F2F2;
+}
+
+.carousel-caption p {
+  font-size: 1em;
+  color: #21ddfb;
+  margin-right: 50px;
+  font-family: "Roboto";
+  color: #0d0d0d;
+}
+
+.btn-park {
+  background-color: #0d0d0d;
+  color: #F2F2F2;
+  font-family: "pattaya";
+  font-size: 1.3em;
+}
+
+/* END Carousel Slayder*/
+.img-sm {
+  margin-top: 70px;
+}
+
+/* Banners */
+.banner1 {
+  position: absolute;
+  top: 900px;
+}
+
+.banner2 {
+  position: absolute;
+  top: 900px;
+  left: 89%;
+}
+
+.banner3 {
+  position: absolute;
+  top: 2000px;
+}
+
+.banner4 {
+  position: absolute;
+  top: 2000px;
+  left: 89%;
+}
+
+/* END Banners */
+/* No Color Headers */
+#NCHeader {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wtitle {
+  padding: 50px;
+}
+
+.wtitle h2 {
+  font-size: 5em;
+  color: #0d0d0d;
+  font-family: "pattaya";
+}
+
+/*END No Color Headers */
+/* Hotel Cards*/
+.our-hotels {
+  text-align: center;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.our-hotels:hover {
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.our-hotels .pic {
+  overflow: hidden;
+  position: relative;
+}
+
+.our-hotels .pic:before,
+.our-hotels .pic:after {
+  content: "";
+  width: 200%;
+  height: 80%;
+  background: #F2CC0F;
+  opacity: 0.3;
+  position: absolute;
+  top: -100%;
+  left: -4%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.our-hotels .pic:after {
+  background: #8CBF3F;
+  opacity: 0.3;
+  top: auto;
+  left: auto;
+  bottom: -100%;
+  right: -4%;
+}
+
+.our-hotels:hover .pic:before {
+  top: 0;
+}
+
+.our-hotels:hover .pic:after {
+  bottom: 0;
+}
+
+.our-hotels .pic img {
+  width: 100%;
+  height: auto;
+}
+
+.our-hotels .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease 0.3s;
+  transition: all 0.5s ease 0.3s;
+}
+
+.our-hotels:hover .social {
+  opacity: 1;
+}
+
+.our-hotels .social li {
+  display: inline-block;
+}
+
+.our-hotels .social li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 30px;
+  color: #0d0d0d;
+  margin-right: 10px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.our-hotels .social li a:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #9453A6;
+  border-radius: 0 20px 20px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.our-hotels .social li a:hover:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.our-hotels .hotel-content {
+  padding: 20px;
+}
+
+/* .our-hotels .title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #047168;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-family:map-get($fonts , fheader1);
+
+}
+
+.our-hotels .post {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: #707070;
+    text-transform: capitalize;
+}
+
+ */
+/*END  Hotel Cards*/
+/*Walk-OnsBistreauxAndBar*/
+#vid {
+  padding: 30px 0px;
+  background-image: url(../images/Sponsers/WalkOnsBistreauxAndBar/WalkOnsBistreauxAndBar16.jpg);
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#vid p {
+  font-family: "Roboto";
+  color: #0d0d0d;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  background-color: #E9ECEF;
+  padding: 5px 5px;
+  border: 1px solid #0d0d0d;
+}
+
+#vid a {
+  font-family: "pattaya";
+  color: #F2F2F2;
+  background-color: #0d0d0d;
+  color: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+  width: 50%;
+  margin-left: 25%;
+}
+
+#vid a:hover {
+  color: #9453A6;
+}
+
+/* END Walk-OnsBistreauxAndBar*/
+@media screen and (max-width: 1140px) {
+  .banner1, .banner2, .banner3, .banner4 {
+    display: none;
+  }
+  .carousel-caption .h3w {
+    font-size: 3rem;
+  }
+  .carousel-caption .pw {
+    font-size: 1.2em;
+  }
+  .carousel-caption .h3c {
+    font-size: 3em;
+  }
+  .carousel-caption .p3c {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wtitle h2 {
+    font-size: 4em;
+  }
+  .carousel-caption .h3w {
+    font-size: 1.8rem;
+  }
+  .carousel-caption .pw {
+    font-size: 1.1em;
+  }
+  .carousel-caption .h3c {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wtitle h2 {
+    font-size: 3em;
+  }
+  .cartext {
+    top: 30px;
+  }
+  .carousel-caption .p3c {
+    font-size: 1.3em;
+  }
+  .walkvid {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wtitle h2 {
+    font-size: 3em;
+  }
+  .carousel {
+    display: none;
+  }
+}
+
+/* Nav bar */
+.rnav {
+  position: fixed;
+  z-index: 2;
+}
+
+.logo {
+  width: 80px;
+  top: 0;
+}
+
+.hicon {
+  width: 50px;
+}
+
+nav {
+  background-color: #0d0d0d;
+}
+
+nav a {
+  font-size: 2em;
+  font-family: "pattaya";
+  text-align: center;
+}
+
+nav a span {
+  color: #F2F2F2;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+#navword5 {
+  -webkit-text-decoration: underline #F2CC0F;
+          text-decoration: underline #F2CC0F;
+}
+
+#navword1:hover {
+  color: #8CBF3F;
+  -webkit-text-decoration: underline #9453A6;
+          text-decoration: underline #9453A6;
+}
+
+#navword2:hover {
+  color: #F2CC0F;
+  -webkit-text-decoration: underline #8CBF3F;
+          text-decoration: underline #8CBF3F;
+}
+
+#navword3:hover {
+  color: #9453A6;
+  -webkit-text-decoration: underline #F2CC0F;
+          text-decoration: underline #F2CC0F;
+}
+
+#navword4:hover {
+  color: #8CBF3F;
+  -webkit-text-decoration: underline #9453A6;
+          text-decoration: underline #9453A6;
+}
+
+#navword5:hover {
+  color: #9453A6;
+  -webkit-text-decoration: underline #F2CC0F;
+          text-decoration: underline #F2CC0F;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav a {
+    font-size: 1em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  nav a {
+    font-size: 1.5em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 720px) {
+  nav a {
+    font-size: 1.5em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 960px) {
+  nav a {
+    font-size: 2em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1140px) {
+  nav a {
+    font-size: 2em;
+  }
+}
+
+/*END Nav bar */
+/* footer */
+ul.footer-list-top {
+  list-style: none;
+  margin: 0 auto !important;
+  padding: 0 0 0 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.generic-anchor {
+  color: #F2F2F2;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  font-family: "Roboto";
+}
+
+.generic-anchor2 {
+  font-family: "Roboto";
+  color: #0d0d0d;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.flex-rw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+footer {
+  background: #0d0d0d;
+  margin-top: auto;
+  width: 100%;
+}
+
+.rcenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.footer-list-header {
+  color: #F2F2F2;
+  font-size: 1.5em;
+  font-family: "pattaya";
+}
+
+.footer-list-anchor {
+  font-family: "pattaya";
+  font-size: 1.2em;
+}
+
+.footer-social-section {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  background: #F2F2F2;
+}
+
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 2px solid;
+  border-color: #F2CC0F;
+  width: calc(100% - 20px);
+}
+
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: #F2F2F2;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+.footer-social-connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+  font-family: "pattaya";
+  color: #0d0d0d;
+}
+
+.footer-social-overlap > a {
+  font-size: 1.5em;
+}
+
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.4em;
+}
+
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #0d0d0d;
+}
+
+.footer-bottom-section > div:first-child {
+  margin-right: auto;
+}
+
+.footer-bottom-wrapper {
+  font-size: 1em;
+  color: #F2F2F2;
+  font-family: "Roboto";
+}
+
+.footer-address {
+  display: inline;
+  font-style: normal;
+}
+
+.mail:hover {
+  color: #9453A6;
+}
+
+.fb:hover {
+  color: #8CBF3F;
+}
+
+.twitter:hover {
+  color: #F2CC0F;
+}
+
+.insta:hover {
+  color: #9453A6;
+}
+
+.yt:hover {
+  color: #8CBF3F;
+}
+
+.sitemap1:hover {
+  color: #9453A6;
+}
+
+.sitemap2:hover {
+  color: #8CBF3F;
+}
+
+.sitemap3:hover {
+  color: #F2CC0F;
+}
+
+.sitemap4:hover {
+  color: #9453A6;
+}
+
+.sitemap5:hover {
+  color: #8CBF3F;
+}
+
+.footer-ns {
+  padding: 10px 25px;
+  border-color: transparent;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-ns h4 {
+  color: #F2F2F2;
+  font-size: 1.5em;
+  font-family: "pattaya";
+  text-align: center;
+}
+
+.footer-ns p {
+  font-size: 1em;
+  font-family: "Roboto";
+  color: #F2F2F2;
+}
+
+.footer-ns .btn {
+  color: #F2F2F2;
+  font-size: 1.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn:hover {
+  color: #8CBF3F;
+}
+
+.fh1:hover {
+  color: #F2CC0F;
+  cursor: context-menu;
+}
+
+.fh2:hover {
+  color: #8CBF3F;
+  cursor: context-menu;
+}
+
+.fh3:hover {
+  color: #9453A6;
+  cursor: context-menu;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+  .fh1, .fh2, .fh3 {
+    font-size: 1em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+  .fh1, .fh2, .fh3 {
+    font-size: 1em;
+  }
+}
+
+/*END footer*/
+body html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto";
+}
+
+.backgroundimg {
+  background-image: url(../images/sitebg2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.mainco {
+  position: relative;
+  z-index: 1;
+  margin-top: 120px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,629 @@
+/* Ace Hotel Page ---------> */
+.allSite {
+  margin-top: 120px;
+}
+
+/* No Color Headers */
+.wtitle h2 {
+  font-size: 4em;
+  color: #0d0d0d;
+  font-family: "pattaya";
+  float: left;
+  margin-top: 30px;
+}
+
+/*END No Color Headers */
+.sowhat {
+  margin-top: 10px;
+}
+
+.sowhat p {
+  font-family: "Roboto";
+  font-size: 1.1em;
+  color: #0d0d0d;
+}
+
+.infos .stext {
+  background-color: #F2F2F2;
+  padding: 15px 30px 15px 30px;
+}
+
+
+/*Gallery Style */
+
+.jumbotron {
+  padding: 1rem 2rem;
+}
+
+.btnr a {
+  background-color: #0d0d0d;
+  color:#F2F2F2 ;
+  font-family: "pattaya";
+  font-size: 1.5em;
+}
+
+.sb-slider {
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.sb-slider li {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.sb-slider li > a {
+  outline: none;
+}
+
+.sb-slider li > a img {
+  border: none;
+}
+
+.sb-slider img {
+  max-width: 100%;
+  display: block;
+}
+
+.sb-description {
+  padding: 20px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 0;
+  position: absolute;
+  background: #F2F2F2;
+  background: rgba(#F2F2F2, 0.4);
+  border-left: 4px solid rgba(#0d0d0d, 0.7);
+  -ms-filter: "progid:DXImageTransform.Microsoft,Alpha(opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  color: #0d0d0d;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  
+}
+
+
+@media only screen and (max-width: 540px) {
+  
+  .sb-description {
+    display: none;
+  }
+
+}
+
+.sb-slider li.sb-current .sb-description {
+  -ms-filter: "progid:DXImageTransform.Microsoft,Alpha(opacity=99)";
+  filter: alpha(opacity=80);
+  opacity: 1;
+}
+
+.sb-slider li.sb-current .sb-description:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft,Alpha(opacity=99)";
+  filter: alpha(opacity=99);
+  background: rgba(190, 176, 155, 0.7);
+}
+
+.sb-perspective {
+  position: relative;
+}
+
+.sb-perspective > div {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.sb-side {
+  margin: 0;
+  display: block;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.grow {
+  margin-left: 63px;
+}
+
+.shadow {
+  width: 100%;
+  height: 168px;
+  position: relative;
+  margin-top: -110px;
+  margin: auto;
+  background: url(../images/shadow.png) no-repeat;
+  z-index: 0;
+  border: none;
+  display: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  margin-left: 63px;
+}
+
+.sb-description h3 {
+  font-size: 1.3em;
+  font-family: "Roboto";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.sb-description h3 a {
+  color: #4a3c27;
+  text-shadow: 0px 1px 1px rgba(148, 83, 166, 0.5);
+}
+
+.nav-arrows {
+  display: none;
+}
+
+.nav-arrows a {
+  width: 42px;
+  height: 42px;
+  background:   url(../images/arrow-left-solid.png);
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  text-indent: -9000px;
+  cursor: pointer;
+  margin-top: -21px;
+  opacity: 0.9;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+          box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.nav-arrows a:first-child {
+  left: auto;
+  right: 2px;
+  background-position: top right;
+}
+
+.nav-arrows a:hover {
+  opacity: 1;
+}
+
+.nav-dots {
+  text-align: center;
+  position: absolute;
+  bottom: -5px;
+  height: 30px;
+  width: 100%;
+  left: 0;
+  display: none;
+}
+
+.nav-dots span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 3px;
+  background: #cbbfae;
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-dots span.nav-dots-current {
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #cbbfae, inset 0 0 0 8px white;
+          box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #cbbfae, inset 0 0 0 8px white;
+}
+
+.nav-options {
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  right: 70px;
+  bottom: 0px;
+  display: none;
+}
+
+.nav-options span {
+  width: 30px;
+  height: 30px;
+  background: #cbbfae url(../images/arrow-left-solid.png) no-repeat top left;
+  text-indent: -9000px;
+  cursor: pointer;
+  opacity: 0.7;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.nav-options span:first-child {
+  background-attachment: -30px 0px;
+  margin-right: 3px;
+}
+
+.nav-options span:hover {
+  opacity: 1;
+}
+
+/* END Gallery Style */
+/* END Ace Hotel Page ---------> */
+/* Nav bar */
+.rnav {
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  width: 80px;
+  top: 0;
+}
+
+.hicon {
+  width: 50px;
+}
+
+nav {
+  background-color: #0d0d0d;
+}
+
+nav a {
+  font-size: 2em;
+  font-family: "pattaya";
+  text-align: center;
+}
+
+nav a span {
+  color: #F2F2F2;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+
+#navword1:hover {
+  color: #8CBF3F;
+  -webkit-text-decoration: underline #9453A6;
+          text-decoration: underline #9453A6;
+}
+
+#navword2:hover {
+  color: #F2CC0F;
+  -webkit-text-decoration: underline #8CBF3F;
+          text-decoration: underline #8CBF3F;
+}
+
+#navword3:hover {
+  color: #9453A6;
+  -webkit-text-decoration: underline #F2CC0F;
+          text-decoration: underline #F2CC0F;
+}
+
+#navword4:hover {
+  color: #8CBF3F;
+  -webkit-text-decoration: underline #9453A6;
+          text-decoration: underline #9453A6;
+}
+
+#navword5:hover {
+  color: #9453A6;
+  -webkit-text-decoration: underline #F2CC0F;
+          text-decoration: underline #F2CC0F;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav a {
+    font-size: 1em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  nav a {
+    font-size: 1.5em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 720px) {
+  nav a {
+    font-size: 1.5em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 960px) {
+  nav a {
+    font-size: 2em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1140px) {
+  nav a {
+    font-size: 2em;
+  }
+}
+
+/*END Nav bar */
+/* footer */
+ul.footer-list-top {
+  list-style: none;
+  margin: 0 auto !important;
+  padding: 0 0 0 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.generic-anchor {
+  color: #F2F2F2;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  font-family: "Roboto";
+}
+
+.generic-anchor2 {
+  font-family: "Roboto";
+  color: #0d0d0d;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.flex-rw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+footer {
+  background: #0d0d0d;
+  margin-top: auto;
+  width: 100%;
+}
+
+.rcenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.footer-list-header {
+  color: #F2F2F2;
+  font-size: 1.5em;
+  font-family: "pattaya";
+}
+
+.footer-list-anchor {
+  font-family: "pattaya";
+  font-size: 1.2em;
+}
+
+.footer-social-section {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  background: #F2F2F2;
+}
+
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 2px solid;
+  border-color: #F2CC0F;
+  width: calc(100% - 20px);
+}
+
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: #F2F2F2;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+.footer-social-connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+  font-family: "pattaya";
+  color: #0d0d0d;
+}
+
+.footer-social-overlap > a {
+  font-size: 1.5em;
+}
+
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.4em;
+}
+
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #0d0d0d;
+}
+
+.footer-bottom-section > div:first-child {
+  margin-right: auto;
+}
+
+.footer-bottom-wrapper {
+  font-size: 1em;
+  color: #F2F2F2;
+  font-family: "Roboto";
+}
+
+.footer-address {
+  display: inline;
+  font-style: normal;
+}
+
+.mail:hover {
+  color: #9453A6;
+}
+
+.fb:hover {
+  color: #8CBF3F;
+}
+
+.twitter:hover {
+  color: #F2CC0F;
+}
+
+.insta:hover {
+  color: #9453A6;
+}
+
+.yt:hover {
+  color: #8CBF3F;
+}
+
+.sitemap1:hover {
+  color: #9453A6;
+}
+
+.sitemap2:hover {
+  color: #8CBF3F;
+}
+
+.sitemap3:hover {
+  color: #F2CC0F;
+}
+
+.sitemap4:hover {
+  color: #9453A6;
+}
+
+.sitemap5:hover {
+  color: #8CBF3F;
+}
+
+.footer-ns {
+  padding: 10px 25px;
+  border-color: transparent;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footer-ns h4 {
+  color: #F2F2F2;
+  font-size: 1.5em;
+  font-family: "pattaya";
+  text-align: center;
+}
+
+.footer-ns p {
+  font-size: 1em;
+  font-family: "Roboto";
+  color: #F2F2F2;
+}
+
+.footer-ns .btn {
+  color: #F2F2F2;
+  font-size: 1.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn:hover {
+  color: #8CBF3F;
+}
+
+.fh1:hover {
+  color: #F2CC0F;
+  cursor: context-menu;
+}
+
+.fh2:hover {
+  color: #8CBF3F;
+  cursor: context-menu;
+}
+
+.fh3:hover {
+  color: #9453A6;
+  cursor: context-menu;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+  .fh1, .fh2, .fh3 {
+    font-size: 1em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+  .fh1, .fh2, .fh3 {
+    font-size: 1em;
+  }
+}
+
+/*END footer*/
+body html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto";
+}
+
+.backgroundimg {
+  background-image: url(../images/sitebg2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.mainco {
+  position: relative;
+  z-index: 0;
+  margin-top: 120px;
+}
+/*# sourceMappingURL=aceHotel.css.map */

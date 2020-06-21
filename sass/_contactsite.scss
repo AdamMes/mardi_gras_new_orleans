@@ -1,0 +1,276 @@
+$colors: (
+    DPurple : #9453A6,
+    DGreen : #8CBF3F,
+    DYellow : #F2CC0F,
+    DWhite : #F2F2F2,
+    DBlack : #0d0d0d,
+);
+
+$fonts: (
+   fheader1 : "pattaya",
+   fheader2 : "Henny Penny",
+   ftext : "Roboto",
+);
+
+/* No Color Headers */
+#NCHeader {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wtitle {
+    margin-top: 80px;
+    padding: 50px;    
+}
+
+
+
+.wtitle h2 {
+    font-size: 5em;
+    color: map-get($colors, DBlack);
+    font-family:map-get($fonts , fheader1);
+}
+
+/*END No Color Headers */
+
+/* Form */
+.row {
+  margin-right: 0;
+}
+
+
+body{
+  background: url('bg.jpg') no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.wrapper{
+  width: 100%;
+}
+
+.contact-form{
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  background:map-get($colors, DBlack );
+  padding: 20px;
+  border-radius: 0 10px 0 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields .input,
+.msg textarea{
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: map-get($colors, DYellow );
+  width: 100%;
+}
+
+.msg textarea{
+  height: 163px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: map-get($colors, DWhite );
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: map-get($colors, DWhite );
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: map-get($colors, DWhite );
+}
+
+#message {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    color: map-get($colors, DBlack );
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: map-get($fonts, fheader1);
+    font-size: 1.5em;
+    transition: all 0.5s ease-in-out;
+    width: 30%;
+    align-self: center;
+    background-color: map-get($colors, DWhite);
+    border-color: map-get($colors,DWhite);
+    margin-left: 33%;
+    margin-bottom: 20px;
+}
+
+#message:hover {
+    color: map-get($colors, DBlack) !important;
+    background-color: map-get($colors, DGreen );
+    border-color: map-get($colors, DGreen ) ;
+}
+
+
+label h4
+ {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: map-get($colors, DWhite );
+  font-family: map-get($fonts,  fheader1 );
+}
+
+.coll {
+    padding: 0 !important;
+}
+
+
+.jumbotron {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.sub {
+  background-color: map-get($colors, DBlack );
+width: 100%;
+margin: 0 auto;
+align-items: center;
+border-radius: 0  0 10px 0;
+
+}
+
+#emailphone {
+  background-color: map-get($colors, DBlack );
+  font-size: 3.5em;
+  color: map-get($colors, DWhite);
+}
+
+.maillink {
+font-family: map-get($fonts, fheader1 );
+color : map-get($colors, DWhite );
+font-size: 1em;
+display: flex;
+justify-content: center;
+margin-bottom: 80px;
+}
+
+.maillink:hover {
+  text-decoration: none;
+  color: map-get($colors, DPurple );
+  }
+
+.pmaillink {
+  font-family: map-get($fonts, fheader2 );
+  color : map-get($colors, DWhite );
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-top: 50px;
+  text-align: center;
+  }
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px){
+   .maillink {
+       font-size: 0.8em;
+       }
+  .pmaillink {
+      font-size: 0.9em;
+      margin-bottom: 20px;
+      }
+         }
+
+  @media screen and (max-width: 992px){
+   
+    #del {
+       display: none;
+       
+     }
+     .contact-form{
+      border-radius: 10px 10px 0 0;
+    }
+    .sub {
+     border-radius: 0  0 10px 10px;
+     }
+     .maillink {
+      font-size: 0.8em;
+      }
+  .pmaillink {
+     font-size: 0.9em;
+     }
+         }
+
+ @media screen and (max-width: 768px){
+  .wtitle h2 {
+      font-size: 4em;
+       } 
+  .contact-form{
+    border-radius: 10px 10px 0 0;
+      }
+  .sub {
+  border-radius: 0  0 10px 10px;
+   }
+   .maillink {
+    font-size: 0.6em;
+    }
+.pmaillink {
+   font-size: 0.7em;
+   }
+  }
+
+  @media screen and (max-width: 576px){
+    label h4 {
+   margin-left: 110px;
+    }
+    .wtitle h2 {
+      font-size: 2.2em;
+    } 
+   .contact-form{
+    border-radius: 10px 10px 0 0;
+    }
+   .sub {
+   border-radius: 0  0 10px 10px;
+   
+    }
+
+    
+      }
+
+
+/* END Form */

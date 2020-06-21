@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>TESTING - Card</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Google fonts for the site -->
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny|Pattaya|Roboto&display=swap" rel="stylesheet">
+    <!-- LOGO FOR BROWSER -->
+    <link rel="icon" type="image/png" href="images/logo/logoforbrowser.png" sizes="96x96" />
+    <style>
+        body {
+            background-color: #e5e5e5;
+        }
+
+        .our-hotels {
+            text-align: center;
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-hotels:hover {
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+        }
+
+        .our-hotels .pic {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .our-hotels .pic:before,
+        .our-hotels .pic:after {
+            content: "";
+            width: 200%;
+            height: 80%;
+            background: rgba(38, 37, 37, 0.8);
+            position: absolute;
+            top: -100%;
+            left: -4%;
+            transform: rotate(45deg);
+            transition: all 0.5s ease 0s;
+        }
+
+        .our-hotels .pic:after {
+            background: rgba(8, 75, 77, 0.8);
+            top: auto;
+            left: auto;
+            bottom: -100%;
+            right: -15%;
+        }
+
+        .our-hotels:hover .pic:before {
+            top: 0;
+        }
+
+        .our-hotels:hover .pic:after {
+            bottom: 0;
+        }
+
+        .our-hotels .pic img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .our-hotels .social {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: absolute;
+            bottom: 45%;
+            left: 0;
+            opacity: 0;
+            z-index: 2;
+            transition: all 0.5s ease 0.3s;
+        }
+
+        .our-hotels:hover .social {
+            opacity: 1;
+        }
+
+        .our-hotels .social li {
+            display: inline-block;
+        }
+
+        .our-hotels .social li a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            text-decoration: none;
+            line-height: 40px;
+            font-size: 20px;
+            color: #fff;
+            margin-right: 10px;
+            position: relative;
+            transition: all 0.3s ease 0s;
+        }
+
+        .our-hotels .social li a:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #db162f;
+            border-radius: 0 20px 20px 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 0.3s ease 0s;
+        }
+
+        .our-hotels .social li a:hover:after {
+            transform: rotate(180deg);
+        }
+
+        .our-hotels .hotel-content {
+            padding: 20px;
+        }
+
+        .our-hotels .title {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #047168;
+            text-transform: uppercase;
+            margin-bottom: 7px;
+        }
+
+        .our-hotels .post {
+            display: block;
+            font-size: 17px;
+            font-weight: 600;
+            color: #707070;
+            text-transform: capitalize;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Hotel Card 1-->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="our-hotels">
+                    <div class="pic">
+                        <img src="images/festival/Sponsers/sample1.jpg" alt="image1">
+                        <ul class="social">
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fas fa-hotel"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="hotel-content">
+                        <h3 class="title">SR Totorials</h3>
+                        <span class="post">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <!--Hotel Card 2-->
+            <div class="col-md-4 col-sm-6">
+                <div class="our-hotels">
+                    <div class="pic">
+                        <img src="images/festival/Sponsers/sample2.jpg" alt="image2">
+                        <ul class="social">
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fas fa-hotel"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="hotel-content">
+                        <h3 class="title">Lorem Ipsum</h3>
+                        <span class="post">Mind Bloer</span>
+                    </div>
+                </div>
+            </div>
+            <!--Hotel Card 3-->
+            <div class="col-md-4 col-sm-6">
+                <div class="our-hotels">
+                    <div class="pic">
+                        <img src="images/festival/Sponsers/sample2.jpg" alt="image2">
+                        <ul class="social">
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fas fa-hotel"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="hotel-content">
+                        <h3 class="title">Lorem Ipsum</h3>
+                        <span class="post">Mind Bloer</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

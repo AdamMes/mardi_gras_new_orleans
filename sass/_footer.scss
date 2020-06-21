@@ -1,0 +1,231 @@
+$colors: (
+    DPurple : #9453A6,
+    DGreen : #8CBF3F,
+    DYellow : #F2CC0F,
+    DWhite : #F2F2F2,
+    DBlack : #0d0d0d,
+);
+$fonts: (
+   fheader1 : "pattaya",
+   fheader2 : "Henny Penny",
+   ftext : "Roboto",
+);
+/* footer */
+ul.footer-list-top {
+  list-style: none;
+  margin: 0 auto !important;
+  padding: 0 0 0 0 !important;
+}
+a {
+  text-decoration: none
+}
+.generic-anchor {
+  color: map-get($colors ,DWhite);
+  transition: color 0.3s ease-in-out;
+  font-family: map-get($fonts , ftext );
+
+}
+.generic-anchor2 {
+  font-family: map-get($fonts , ftext );
+  color: map-get($colors ,DBlack);
+  transition: color 0.3s ease-in-out;
+  
+}
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap; 
+}
+//This main is mostly to push the footer to the bottom and for demo purposes.
+footer {
+  background: map-get($colors , DBlack );
+  margin-top: auto;
+  width: 100%
+}
+.rcenter {
+  display: flex;
+justify-content: center;}
+
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 5px
+}
+.footer-list-header {
+  color: map-get($colors , DWhite );
+  font-size: 1.5em;
+  font-family:map-get($fonts , fheader1 );
+}
+.footer-list-anchor {
+font-family: map-get($fonts , fheader1 );
+font-size: 1.2em;
+}
+.footer-social-section {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  background: map-get($colors ,DWhite);
+}
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 2px solid ;
+  border-color: map-get($colors ,DYellow );
+  width: calc(100% - 20px);
+}
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: map-get($colors ,DWhite);
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+
+.footer-social-connect {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-family: map-get($fonts, fheader1);
+  color: map-get($colors ,DBlack);
+}
+.footer-social-overlap > a {
+  font-size: 1.5em
+}
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.4em
+}
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: map-get($colors , DBlack );
+}
+
+.footer-bottom-section > div:first-child {
+  margin-right: auto;
+ 
+}
+.footer-bottom-wrapper {
+  font-size: 1em;
+  color: map-get($colors, DWhite );
+  font-family:  map-get($fonts, ftext);
+}
+.footer-address {
+  display: inline;
+  font-style: normal
+}
+.mail:hover {
+  color: map-get($colors , DPurple );
+}
+.fb:hover{
+  color: map-get($colors , DGreen );
+}
+.twitter:hover{
+color: map-get($colors , DYellow);
+}
+.insta:hover {
+  color: map-get($colors , DPurple );
+}
+.yt:hover {
+  color: map-get($colors , DGreen );
+}
+.sitemap1:hover {
+  color: map-get($colors , DPurple );
+}
+.sitemap2:hover {
+  color: map-get($colors , DGreen );
+}
+.sitemap3:hover {
+  color: map-get($colors , DYellow);
+}
+.sitemap4:hover {
+  color: map-get($colors , DPurple );
+}
+.sitemap5:hover {
+  color: map-get($colors , DGreen );
+}
+
+
+
+
+//News Letter
+.footer-ns { 
+  padding:10px 25px;
+  border-color: transparent; 
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  h4 {
+    color: map-get($colors , DWhite );
+    font-size: 1.5em;
+    font-family:map-get($fonts , fheader1 );
+    text-align: center;
+  }
+  p { 
+font-size: 1em;
+font-family: map-get($fonts, ftext );
+color: map-get($colors,DWhite );
+  }
+
+
+
+    .btn {
+      color: map-get($colors,DWhite );
+      font-size: 1.6em;
+      display: flex;
+      justify-content: center;
+        }
+  
+}
+
+.btn:hover {
+  color: map-get($colors,DGreen );  
+    }
+
+
+.fh1:hover {
+  color: map-get($colors,DYellow );
+  cursor: context-menu;
+}
+
+.fh2:hover {
+  color: map-get($colors,DGreen );
+  cursor: context-menu;
+}
+
+.fh3:hover {
+  color: map-get($colors,DPurple );
+  cursor: context-menu;
+}
+
+
+//---------
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+ .fh1, .fh2 , .fh3 {
+   font-size: 1em;
+ }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+  .fh1, .fh2 , .fh3 {
+    font-size: 1em;
+  }
+ 
+ 
+}
+
+/*END footer*/
+
+

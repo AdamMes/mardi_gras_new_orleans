@@ -1,0 +1,173 @@
+$colors: (
+    DPurple : #9453A6,
+    DGreen : #8CBF3F,
+    DYellow : #F2CC0F,
+    DWhite : #F2F2F2,
+    DBlack : #0d0d0d,
+);
+
+$fonts: (
+   fheader1 : "pattaya",
+   fheader2 : "Henny Penny",
+   ftext : "Roboto",
+);
+
+/*About Page ---------> */
+
+/* No Color Headers */
+#NCHeader {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wtitle {
+    margin-top: 80px;
+    padding: 50px;    
+}
+
+.wtitle h2 {
+    font-size: 5em;
+    color: map-get($colors, DBlack);
+    font-family:map-get($fonts , fheader1);
+}
+
+/*END No Color Headers */
+
+/*Major Say*/
+
+
+.mname {
+    font-family: map-get($fonts , fheader1 );
+    font-size: 1.5em;
+    color: map-get($colors, DWhite);
+    margin: 6px auto ;
+}
+
+.mcicons {
+    background-color: map-get($colors, DBlack); 
+    display: flex;
+    justify-content: center;
+
+    
+    a{
+        color: map-get($colors, DWhite);
+        transition: all 0.2s ease-in-out;
+        margin: 8px 0;
+    }
+    a:hover{
+        color: map-get($colors, DPurple);
+
+    }
+}
+.mtext {
+    background-color: map-get($colors, DWhite);
+    padding: 15px 30px 15px 30px;
+}
+
+.majortext {
+    font-family: map-get($fonts, ftext );
+    color: map-get($colors, DBlack );
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.signture {
+    float: right;
+    position: relative;
+}
+
+
+/* What is Mardi Gras*/
+
+.sowhat p {
+    font-family: map-get($fonts , ftext );
+    font-size: 1.1em;
+    color: map-get($colors, DBlack);
+
+}
+
+/* END What is Mardi Gras*/
+
+
+
+
+/* Mardi Gras 2020*/
+
+.mardi2020 {
+
+h2 {
+    font-family: map-get($fonts , fheader1 );
+    font-size: 2.5em;
+    color: map-get($colors, DPurple);
+    margin: 5px auto;
+}
+
+p {
+    font-family: map-get($fonts , ftext );
+    font-size: 1.1em;
+    color: map-get($colors, DBlack);
+}
+
+}
+
+
+/* END Mardi Gras 2020*/
+
+
+
+@media screen and (max-width: 1200){
+    
+    
+
+  };
+
+  
+
+@media screen and (max-width: 992){
+    
+    
+    
+};
+
+
+
+@media screen and (max-width: 768){
+    
+    .wtitle h2 {
+        font-size: 2em;
+         } 
+
+         
+.mardi2020, .sowhat {
+p {
+    font-size: 0.7em;
+
+}
+
+}
+    
+};
+
+@media screen and (max-width: 576){
+
+    .wtitle h2 {
+        font-size: 1em;
+      } 
+        
+.mardi2020, .sowhat {
+    p {
+        font-size: 0.5em;
+    
+    }
+    
+    }
+
+    
+.wtitle h2 {
+    font-size: 2em;
+}
+};
+
+/* END About Page ---------> */

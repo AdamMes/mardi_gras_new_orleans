@@ -1,0 +1,135 @@
+$colors: (
+    DPurple : #9453A6,
+    DGreen : #8CBF3F,
+    DYellow : #F2CC0F,
+    DWhite : #F2F2F2,
+    DBlack : #0d0d0d,
+);
+
+$fonts: (
+   fheader1 : "pattaya",
+   fheader2 : "Henny Penny",
+   ftext : "Roboto",
+);
+
+/* Nav bar */
+
+
+.rnav {
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+   width: 80px;
+   top: 0;
+}
+
+
+
+.hicon {
+    width: 50px;
+}
+
+
+
+nav{ 
+    background-color: map-get($colors , DBlack );
+    a {
+    font-size: 2em;
+    font-family:map-get($fonts , fheader1);
+    text-align: center;
+   
+
+    span {
+        color: map-get($colors, DWhite);
+        transition: color 0.2s ease-in-out;
+    }
+}
+}
+
+#navword4 {
+    text-decoration: underline map-get($colors, DPurple );
+
+}
+
+#navword1:hover {
+    color: map-get($colors, DGreen);
+    text-decoration: underline map-get($colors, DPurple );
+}
+
+
+#navword2:hover {
+    color: map-get($colors, DYellow);
+    text-decoration: underline map-get($colors, DGreen );
+
+}
+
+#navword3:hover {
+    color: map-get($colors, DPurple);
+    text-decoration: underline map-get($colors, DYellow );
+
+}
+
+#navword4:hover {
+    color: map-get($colors, DGreen);
+    text-decoration: underline map-get($colors, DPurple );
+
+}
+
+#navword5:hover {
+    color: map-get($colors, DPurple);
+    text-decoration: underline map-get($colors, DYellow );
+
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    nav a {
+        font-size: 1em;
+    }
+
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+    nav a {
+        font-size: 1.5em;
+    }
+    
+}
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 720px) {
+    nav a {
+        font-size: 1.5em;
+    }
+
+
+} 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 960px) {
+    nav a {
+        font-size: 2em;
+    }
+
+   
+
+} 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1140px) {
+
+nav a {
+    font-size: 2em;
+}
+
+
+
+}
+
+/*END Nav bar */
